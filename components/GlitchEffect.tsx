@@ -90,20 +90,20 @@ const GlitchEffect: React.FC = () => {
 
         function onResize() {
             if (_image) {
-                _canvas.width = _image.width;
-                _canvas.height = _image.height;
+                _canvas!.width = _image.width;
+                _canvas!.height = _image.height;
             }
         }
 
         function render() {
-            const width = _canvas.width;
-            const height = _canvas.height;
+            const width = _canvas!.width;
+            const height = _canvas!.height;
 
-            _context.clearRect(0, 0, width, height);
-            _context.drawImage(_imageData, 0, 0, _image.width, _image.height);
+            _context!.clearRect(0, 0, width, height);
+            _context!.drawImage(_imageData, 0, 0, _image!.width, _image!.height);
 
             if (0.5 < Math.random()) {
-                getRandomValue(effectList)(_context, width, height);
+                getRandomValue(effectList)(_context!, width, height);
             }
 
             window.requestAnimationFrame(render);
