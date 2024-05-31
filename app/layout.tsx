@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Before The Feast",
   description: "Falz The Bahd Guy",
+  icons: {
+    icon: '/18.png'
+  }
 };
 
 export default function RootLayout({
