@@ -2,12 +2,15 @@
 
 import Countdown from "@/components/Countdown";
 import { VelocityScroll } from "@/components/VelocityScroll";
+import Link from "next/link";
 import { GlitchImage } from "react-glitch-image";
-
+import { BiLinkExternal } from "react-icons/bi";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen items-end justify-center overflow-hidden">
+    <main className="flex flex-col h-screen items-end justify-center overflow-hidden relative">
       <div className="bg-[url('/image.png')] bg-cover absolute xl:hidden h-screen w-full"></div>
 
       <div className="w-full  absolute left-0 text-white md:text-black">
@@ -26,6 +29,17 @@ export default function Home() {
           // layerColors={["rgba(0,0,180,0.05)", "rgba(200,0,0,0.05)"]}
           />
         </div>
+      </div>
+      <div className="absolute bottom-2 md:w-1/2 flex gap-4 items-center justify-center left-5 z-50 text-white">
+        <Link href="https://falzthebahdguy.com/" target="blank" className="text-[24px]">
+          <BiLinkExternal />
+        </Link>
+        <Link href="https://www.instagram.com/falzthebahdguy/" target="blank" className="text-[24px]">
+          <FaInstagram />
+        </Link>
+        <Link href="https://x.com/falzthebahdguy" target="blank" className="text-[24px]">
+          <FaXTwitter />
+        </Link>
       </div>
     </main>
   );
