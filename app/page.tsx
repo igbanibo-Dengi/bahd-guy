@@ -30,14 +30,14 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="absolute bottom-2 md:w-1/2 flex gap-4 items-center justify-center left-5 z-50 text-white">
-        <Link href="https://falzthebahdguy.com/" target="blank" className="text-[24px]">
+      <div className="absolute bottom-2 md:w-1/2 flex gap-4 items-center justify-center left-5 z-50 text-white xl:text-black text-[24px] md:text-[48px] xl:text-[24px]">
+        <Link href="https://falzthebahdguy.com/" target="blank">
           <BiLinkExternal />
         </Link>
-        <Link href="https://www.instagram.com/falzthebahdguy/" target="blank" className="text-[24px]">
+        <Link href="https://www.instagram.com/falzthebahdguy/" target="blank">
           <FaInstagram />
         </Link>
-        <Link href="https://x.com/falzthebahdguy" target="blank" className="text-[24px]">
+        <Link href="https://x.com/falzthebahdguy" target="blank">
           <FaXTwitter />
         </Link>
       </div>
