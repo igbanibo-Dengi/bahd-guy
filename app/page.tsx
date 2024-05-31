@@ -17,7 +17,7 @@ export default function Home() {
     // Simulate loading delay, replace with actual loading logic
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500); // Adjust the timeout as needed
+    }, 2000); // Adjust the timeout as needed
 
     return () => clearTimeout(timer);
   }, []);
